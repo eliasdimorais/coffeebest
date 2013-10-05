@@ -1,0 +1,378 @@
+/*
+Design Modification: Elias de Moraes, v.1.1. May 29th, 2012)  
+Original design: Inland v1.1 - May 21th, 2012) - A free xhtml/css website template by Andreas Viklund.
+Includes:
+template based on http://andreasviklund.com/templates/inland/
+jQuery v1.7.1 from http://jquery.org/
+Nivo Slider v2.7.1 by Gilbert Pellegrom - http://nivo.dev7studios.com/
+*/
+@import 'base.css';
+@import 'flexslider.css';
+@import 'camera.css';
+@import '../css/js/jquery-ui-1.8.24.custom.css';
+
+/*** CONTENT ***/
+#content{}
+#content.withsidebar{background:url(../images/bg-content-inner.gif) repeat-y;}
+#main{padding:40px;}
+#maincontent{float:left; width:610px; padding-right:25px;}
+
+/*** CONTENT ELEMENT ***/
+.container940{width:940px; margin:0 auto;}
+.colortext, .colortext a, .colortext a:visited{color:#bababa !important;}
+.patternbox{background:url(../images/pattern_box.gif) repeat;  border:solid 1px #dcdcdc; border-width:1px 0; padding:20px 0}
+
+
+/*** conteudo ***/
+
+#conteudo{width:50%; float:left; padding:40px 0 20px 0; margin-right:20px;}
+#conteudo{margin:0;}
+
+#footer ul{list-style-type:none; margin:0; padding:0;}
+#footer ul li.widget-container{margin-bottom:40px;}
+#footer ul li.widget-container:last-child{margin-bottom:0px;}
+#footer .widget-title{color:#fafafa; text-transform:uppercase; margin-bottom:25px; font-size:14px}
+#footer ul li a, #footer ul li a:visited{color:#aaa}
+#footer ul li a:hover{text-decoration:none; color:#fff}
+#footer ul li li{border-bottom:solid 1px #4a4a4a; padding:0 0 6px 0; margin:0 0 6px 0;}
+
+#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6{color:#fafafa}
+#recentpostwidget h5{font-size:12px; font-family:Arial; margin-bottom:5px}
+#footer #recentpostwidget li h5 a, #footer #recentpostwidget li h5 a:visited{color:#fafafa}
+#recentpostwidget li{clear:both; margin:0 0 30px 0 !important; border:0px !important; padding:0 !important; background:transparent !important}
+
+/*TEXT Área*/
+textarea#styled {
+    max-width: 600px;
+    height: 60px;
+    border: 2.5px solid #6e9435;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    margin-left: 10px; 
+    margin-right: 10px;    
+}
+
+*{border:0;font:inherit;font-size:100%;margin:0;padding:0;vertical-align:baseline;}
+
+/* HTML elements */
+body{background-color:#eaf0e1;color:black;font-family:'Droid Sans',Tahoma,Arial,sans-serif;font-size:13px;line-height:1.7em;}
+a{color:#1874CD;text-decoration:none;}
+a:hover{color:#333;text-decoration:none;}
+a img{border:none;}
+h1,h2,h3,h4{clear:left;color:#6e9435;font-weight:400;margin:0.7em 0;font-family:'Helvetica';}
+h1{font-size:2.6em;}
+h2{font-size:2.4em;}
+h3{font-size:1.9em;}
+p,ul{margin:0 0 20px 0;}
+i,em {font-style:italic;}
+b,strong {font-weight:700;}
+
+
+/* Main wrappers */
+#wrapper1240{background-color:#fff;margin:20px auto;width:1240px;}
+#wrapper960{background-color:#fff;margin:0px auto;width:960px;}
+#wrapper760{background-color:#fff;margin:20px auto;width:760px;}
+#wrapper600{background-color:#fff;margin:0 auto;width:600px;}
+#wrapperfluid{background-color:#fff;margin:0 auto;max-width:1260px;}
+
+/* Layout IDs */
+
+#sitetitle{float:left;margin:5px 10px 10px 5px;}
+#sitetitle h1 {font-size:40px;color:#777;margin:0;padding:0;}
+#header-image{height:300px;margin:0;padding:0;}
+#content{padding:15px 30px;background-color:#fafafa;height: auto}
+#extended{padding:15px 30px;background-color:#fff;}
+#extended a{text-decoration:underline;}
+
+/* Top links menu */
+#toplinks{background-color:#fafafa;padding:0 30px;}
+#toplinks ul{list-style:none;margin:0;text-align:right;}
+#toplinks ul li{display:inline-block;font-size:11px;margin:15px 0 12px 15px;}
+#toplinks ul li a{color:#797777;}
+#toplinks ul li a:hover{color:#2c2b2b;text-decoration:none;}
+
+/* Main navigation menu */
+/*#nav{
+    float:right;
+    font-family:'Droid Sans',Verdana,Tahoma,sans-serif;
+    text-align:center;
+}
+#nav ul{
+    list-style:none;
+    margin:30px 30px 34px 28px;}
+#nav ul li{
+    background:none!important;
+    display:inline-block;
+    text-align:right;
+    height:auto;
+    line-height:25px;
+    margin-bottom:0;
+    margin-left:25px;
+    position:relative;
+}
+#nav ul li a{color:#797777;
+        display:block;
+        font-size:12px;
+        padding-top:0;
+        text-transform:uppercase;}
+#nav ul li a:hover{
+    color:#111;
+}
+#nav ul li a.current{
+    color:#000;
+}*/
+#nav>li>a>subheader{
+    display: block;
+    font-size: 11px;
+    color: #5285A7;
+    font-style: oblique;
+    margin-top: 10px;
+}
+
+/* Columns */
+#sidebar{width:33.3%;}
+#main{width:66.6%;}
+#main2{width:100.0%;}
+#trio1{float:left;width:100%;}
+#trio2{float:left;width:33.3%;}
+#trio3{float:right;width:33.3%;}
+#patro1{float: top; width:100.0%;}
+.inner{margin:15px 30px;}
+#trio1 .inner{margin-left:20px;}
+#trio2 .inner{margin:20px;}
+#trio3 .inner{margin-right:20px;}
+#patro1 .inner{margin:0;}
+.left .inner{margin-left:0;}
+.right .inner{margin-right:0;}
+
+/* Footer */
+#footer{clear:both;background-color:#fafafa;}
+#footer p{color:#777;font-size:12px;margin:0;padding:15px 30px;text-align:center;}
+#footer a{color:#777;}
+#footer a:hover{color:#333;}
+
+/* Image alignment */
+img.alignleft,img.aligncenter,img.alignright{background:#fff;padding:4px;margin-bottom:10px;border:1px solid #ddd;}
+.alignleft{float:left;margin-right:30px;}
+.alignright{float:right;margin-left:30px;}
+.aligncenter{text-align:center;display:block;clear:both;margin:5px auto;}
+img.tamanho{width: 850px; height: 650px}
+
+/* Additional classes */
+.shadow{background:url(images/shadow.png) top center no-repeat;}
+.clear{clear:both;}
+.left{float:left;}
+.right{float:right;}
+
+/* Clearing fix */
+.clearfix:after{clear:both;content:".";display:block;height:0;visibility:hidden;}
+* html .clearfix{height:6%;}
+*:first-child+html .clearfix{min-height:1%;}
+
+/* Alternate color scheme, add class="altcolors" to the body tag to apply */
+.altcolors{background-color:#e6e8e8;}
+.altcolors #wrapper600, .altcolors #wrapper760, .altcolors #wrapper960, .altcolors #wrapper1240, .altcolors #wrapperfluid {box-shadow: 0px 0px 28px #888;}
+.altcolors #toplinks, .altcolors #footer{background-color:#eaecec;}
+.altcolors #content{background-color:#f2f4f4;}
+
+/*
+ jQuery Nivo Slider v2.7.1
+ http://nivo.dev7studios.com
+ Copyright 2011, Gilbert Pellegrom
+ Free to use and abuse under the MIT license.
+ http://www.opensource.org/licenses/mit-license.php
+*/
+.nivoSlider{position:relative;}
+.nivoSlider img{position:absolute;top:0;left:0;}
+.nivoSlider a.nivo-imageLink{position:absolute;top:0;left:0;width:100%;height:100%;border:0;padding:0;margin:0;z-index:6;display:none;}
+.nivo-slice{display:block;position:absolute;z-index:5;height:100%;}
+.nivo-box{display:block;position:absolute;z-index:5;}
+.nivo-caption{position:absolute;left:0;bottom:0;background:#000;color:#fff;opacity:0.8;width:100%;z-index:8;}
+.nivo-caption p{padding:5px;margin:0;}
+.nivo-caption a{display:inline!important;}
+.nivo-html-caption{display:none;}
+.nivo-directionNav a{position:absolute;top:45%;z-index:9;cursor:pointer;}
+.nivo-prevNav{left:0;}
+.nivo-nextNav{right:0;}
+.nivo-controlNav a{position:relative;z-index:9;cursor:pointer;}
+.nivo-controlNav a.active{font-weight:700;}
+
+/*
+Skin Name: Nivo Slider Default Theme (modified)
+Skin URI: http://nivo.dev7studios.com
+Skin Type: flexible
+Description: The default skin for the Nivo Slider, modified to work with the Inland One template.
+Version: 1.0
+Author: Gilbert Pellegrom (modified by Andreas Viklund)
+Author URI: http://dev7studios.com
+*/
+.slider-wrapper .nivoSlider{position:relative; height:300px;background:#fafafa no-repeat 50% 50%;margin-bottom:55px;}
+.slider-wrapper .nivoSlider img{position:absolute;top:4px;left:4px;display:none;}
+.slider-wrapper .nivoSlider a{border:0;display:block;}
+.slider-wrapper .nivo-controlNav{position:absolute;left:50%;bottom:-41px;margin-left:-60px;/* Tweak this to center bullets */}
+.slider-wrapper .nivo-controlNav a{display:block;width:22px;height:22px;background:url(images/bullets.png) no-repeat;text-indent:-9999px;border:0;margin-right:3px;float:left;}
+.slider-wrapper .nivo-controlNav a.active{background-position:0 -22px;}
+.slider-wrapper .nivo-directionNav a{display:block;width:30px;height:30px;background:url(images/arrows.png) no-repeat;text-indent:-9999px;border:0;}
+.slider-wrapper a.nivo-nextNav{background-position:-30px 0;right:15px;}
+.slider-wrapper a.nivo-prevNav{left:15px;}
+.slider-wrapper .nivo-caption{font-family:'Droid Sans',Helvetica,Arial,sans-serif;background:rgba(0, 0, 0, 0.2);text-align:center;text-shadow:0 0 4px #111;}
+.slider-wrapper .nivo-caption a{color:#fff;border-bottom:1px dotted #fff;}
+.slider-wrapper .nivo-caption a:hover{color:#fff;}
+
+#frameC {
+    width: 300px;
+    height: 900px;
+    background:url(images/shadow.png) top center no-repeat;
+}
+
+
+
+
+/*
+Tabela para search e lista, tamanho fixo e scrol
+*/
+
+div.scrollTable{
+    background: #fff;
+    border: 1px solid #888;
+}
+
+div.scrollTable table.header, div.scrollTable div.scroller table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+div.scrollTable table.header th, div.scrollTable div.scroller table td{
+    border: 1px solid #444;
+    padding: 3px 5px;
+}
+
+div.scrollTable table.header th{
+    background: #ddd;
+}
+
+div.scrollTable div.scroller{
+    height: 200px;
+    overflow: auto;
+}
+
+div.scrollTable .coluna75px{
+    width: 75px;
+}
+
+div.scrollTable .coluna100px{
+    width: 100px;
+}
+
+div.scrollTable .coluna150px{
+    width: 150px;
+}
+table.sequencia td a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+table.sequencia {
+
+    width: 100%;
+    border-collapse: collapse; /* CSS2 */
+    background: #FFFFF0;
+    border: solid #E5E5E7 1px;
+}
+
+table.sequencia tr:nth-child(even) /* CSS3 */ {
+    background: #F0FFFF;
+}
+
+table.sequencia td {
+    vertical-align: middle;
+    border: 1px dotted #E5E5E7;
+}
+
+table.sequencia th {
+    vertical-align: middle;
+    border: 1px solid green;
+    border-bottom: 1px solid green;
+    background: #F0FFF0;
+}
+
+table.blasts td{
+    border: 1px dotted green;
+}
+hr.divisao{
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-end: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+table.search td{
+    width: 50%;
+}
+
+
+/*header*/
+#header{ 
+    height:75px;  
+    padding:0 20px; 
+    margin:0 0 2px 0; 
+    background:#fff; 
+}
+
+#logo, .theme-logo{ 
+    margin-top: 0px; 
+    padding-right:3px; 
+    display:inline-block;
+    width: 30%;
+}
+#logo{ 
+    float:left; 
+}
+
+/*navigation*/
+#navigation{ 
+    float:right; 
+}
+#navigation ul{ 
+    float:left; 
+    margin:0; 
+    
+}
+#navigation ul li{ 
+    float:left; 
+    list-style:none; 
+}
+#navigation li a{ 
+    float:left; 
+    display:block; 
+    padding:20px 15px; 
+    color:#020202; 
+    font-weight:700; 
+    font-size:14px; }
+#navigation li a:hover{ 
+    border-top:#6e9435 solid 7px; 
+    padding-top:18px; }
+
+
+/*dropdown*/
+#navigation li{ position:relative; }
+#navigation li ul{ position:absolute; top:50px; float:none; background:#fff; width:150px; border-bottom:#ddd solid 1px; display:none; z-index:9; zoom:1; }
+#navigation li ul li{ float:none; border-top:#6e9435 solid 1px; }
+#navigation li ul li a{ float:none; display:block; }
+#navigation li ul li a:hover{ background:#6e9435; color:#fff; }
+#navigation li:hover ul{ display:block; }
+
+/*content*/
+#content{ margin-bottom:30px; }
+
+/*subheader*/
+.subheader{ clear:both; padding:10px 20px; background:rgba(0,0,0,0.3); border-bottom:#6e9435 solid 3px; color:#fff; margin:0 0 30px; overflow:hidden; position:relative; }
+.subheader .page-title{ line-height:48px; font-size:48px; display:inline-block; vertical-align:middle; }
+.subheader .page-desc{ line-height:24px; vertical-align:middle; border-left:#fff solid 1px; display:inline-block; padding-left: 20px; margin:5px 0 0 20px; }
+.subheader .button{ padding:8px 15px; color:#fff; font-weight:700; background:#6e9435; border:0 none; display:block; margin-top:7px; }
+    
