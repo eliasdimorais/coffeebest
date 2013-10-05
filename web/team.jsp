@@ -26,15 +26,38 @@
             </div>
 
 
-            <div id="content" class="clearfix shadow" style="height: auto">
+            <div id="content" class="no-sidebar" style="height: auto">
                 <h3><center>Team</center></h3>
                 <br/>
+                
+                  <div class="main">
+                        <script type="text/javascript">
+                            $(function()
+                            {
+                                setup_filter('ul.gallery', 'quicksand/list-simple');
+                            });
+                        </script>
+                        <ul class="gallery type-1">
+                            <li data-id="paschoal">
+                                <ul class="media">
+                                    <li><a href="./images/douglas_foto.jpeg" class="frame-holder"><img src="./media/images/membros/andre-y.gif" alt="" width="200" /></a></li>
+                                </ul>
+                                <div class="desc">
+                                    <h4><a href="http://lattes.cnpq.br/5834088144837137">Alexandre Rossi Paschoal</a></h4>
+                                    <p>Professor Adjunto - UTFPR  <br/>
+                                        Phd in Bioinformatics - Universidade de São Paulo <br/>
+                                        Assistant Professor - Universidade Tecnológica Federal do Paraná - Câmpus Cornélio Procópio<br>
+                                        Corresponding: <i>paschoal [at] utfpr [dot] edu [dot] br</i> 
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                <!-- #content - end -->
                 <p><b>Alexandre Rossi Paschoal</b> 
                     <a href="http://lattes.cnpq.br/5834088144837137">[Lattes]</a><br/>
-                    Phd in Bioinformatics - Universidade de São Paulo <br/>
-                    Assistant Professor - Universidade Tecnológica Federal do Paraná - Câmpus Cornélio Procópio<br>
-                    Corresponding: <i>paschoal [at] utfpr [dot] edu [dot] br</i> 
-                </p>
+
                 <p><b>Bruno Hideki Arabori</b>
                     <a href="http://lattes.cnpq.br/5183030452171918">[Lattes]</a><br/> 
                     Graduation student - Universidade Tecnológica Federal do Paraná - Câmpus Cornélio Procópio </p>
