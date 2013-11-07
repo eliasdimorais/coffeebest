@@ -12,7 +12,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Droid+Sans' rel='stylesheet' type='text/css' />
-        <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+
         <link rel="stylesheet" type="text/css" media="all" href="./css/style.css" />
         <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
         <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
@@ -33,7 +33,7 @@
                 <ul class="gallery type-1">
                     <li data-id="aa">
                         <ul class="media">
-                            <li><a ><img src="./media/images/membros/andre-y.gif" alt="" width="200" /></a></li>
+                            <li><a ><img src="./images/paschoal.jpg" alt="" width="200" /></a></li>
                         </ul>
                         <div class="desc">
                             <p><b>  Alexandre Rossi Paschoal
@@ -53,15 +53,19 @@
                     <br/>
                     <li data-id="aa">
                         <ul class="media">
-                            <li><a ><img src="./images/" alt="" width="200" /></a></li>
+                            <li><a ><img src="./images/elias.jpg" alt="" width="200" /></a></li>
                         </ul>
                         <div class="desc">
-                            <p>
-                                <b>  Bruno Hideki Arabori 
-                                    <a href="http://lattes.cnpq.br/5183030452171918">[Lattes]</a></b><br/> 
-                                Undergraduation in Systems Analysis and Development [2012] 
+                            <p><b> Elias de Moraes Fernandes
+                                    <a href="http://lattes.cnpq.br/0059611496365823">[Lattes]</a></b><br/>  
+                                Undergraduation in Systems Analysis and Development
                                 at the Federal University of Technology - Paraná - Brazil (UTFPR)
-
+                                <br/> 
+                            <ul> <b> Research interests </b>
+                                <li> Non Coding small RNAs </li>
+                                <li>  Mobile Games Development</li>
+                                <li>  Web Design Development Systems and apps</li>
+                            </ul>
                             </p>
                         </div>
                     </li>
@@ -88,19 +92,33 @@
                     <br/>
                     <li data-id="aa">
                         <ul class="media">
-                            <li><a ><img src="./images/elias.jpg" alt="" width="200" /></a></li>
+                            <li><a ><img src="./images/luiz_felipe_1.jpg" alt="" width="200" /></a></li>
                         </ul>
                         <div class="desc">
-                            <p><b> Elias de Moraes Fernandes
-                                    <a href="http://lattes.cnpq.br/0059611496365823">[Lattes]</a></b><br/>  
-                                Undergraduation in Systems Analysis and Development
-                                at the Federal University of Technology - Paraná - Brazil (UTFPR)
+                            <p><b> Luiz Filipe Protasio Pereira
+                                    <a href="http://lattes.cnpq.br/1177022282500069">[Lattes]</a></b> <br/> 
+                                Researcher at Embrapa Café<br/> 
+                                PhD in Plant Genetics – University of Guelph, Canada [1998]
                                 <br/> 
                             <ul> <b> Research interests </b>
-                                <li>  Small RNAs non Coding</li>
-                                <li>  Mobile Games Development</li>
-                                <li>  Web Design Development Systems and apps</li>
+                                <li>   Coffee Genomics</li>
+                                <li>   Coffee Biotechnology</li>
                             </ul>
+                            </p>
+                        </div>
+                    </li>
+                    <br/>
+                    <li data-id="aa">
+                        <ul class="media">
+                            <li><a ><img src="./images/bruno-arabori.jpg" alt="" width="200" /></a></li>
+                        </ul>
+                        <div class="desc">
+                            <p>
+                                <b>  Bruno Hideki Arabori 
+                                    <a href="http://lattes.cnpq.br/5183030452171918">[Lattes]</a></b><br/> 
+                                Undergraduation in Systems Analysis and Development [2012] 
+                                at the Federal University of Technology - Paraná - Brazil (UTFPR)
+
                             </p>
                         </div>
                     </li>
@@ -125,24 +143,7 @@
                         </div>
                     </li>
                     <br/>
-                    <li data-id="aa">
-                        <ul class="media">
-                            <li><a ><img src="./images/luiz_felipe_1.jpg" alt="" width="200" /></a></li>
-                        </ul>
-                        <div class="desc">
-                            <p><b> Luiz Filipe Protasio Pereira
-                                    <a href="http://lattes.cnpq.br/1177022282500069">[Lattes]</a></b> <br/> 
-                                Researcher at Embrapa Café<br/> 
-                                PhD in Plant Genetics – University of Guelph, Canada [1998]
-                                <br/> 
-                            <ul> <b> Research interests </b>
-                                <li>   Coffee Genomics</li>
-                                <li>   Coffee Biotechnology</li>
-                            </ul>
-                            </p>
-                        </div>
-                    </li>
-                    <br/>
+                    
                 </ul>
             </div>
 

@@ -9,44 +9,47 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-          <link rel="shortcut icon" href="images/icon.ico" >
+        <link rel="shortcut icon" href="images/icon.ico" >
         <title>menu</title>
     </head>
     <body>
-        
-<div id="wrapper">
-	<div id="container">
-	
-		<!--start header -->
-		<header id="header">
-			<div id="logo">
-				<a href="index.html"><strong>Travel</strong>Site</a>
-			</div>	
-			<div id="searchbox">
-				<form action="#">
-					<input type="text" id="search" placeholder="Search" />
-					<button type="submit"></button>
-				</form>
-			</div>
-			<div id="navigation">
-				<ul id="nav">
-					<li class="selected"><a href="index.html">Home</a></li>
-					<li><a href="browse.html">Browse</a>
-						<ul>
-							<li><a href="browse-result.html">Browse Result</a></li>
-							<li><a href="browse-detail.html">Browse Detail</a></li>
-						</ul>
-					</li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="element.html">Element</a></li>
-				</ul>
-			</div>
-		</header>
-		<!--end header -->
-	</div>
-	<!--container -->
-</div>
-<!--wrapper -->
+
+        <div id="wrapper">
+            <div id="container">
+
+                <!--start header -->
+                <header id="header">
+                    <div id="logo">
+                        <a href="index.jsp"><img width="80%" src="images/logo.png" alt="" /></a>
+                    </div>	
+                    <div id="navigation">
+                        <ul id="nav">
+                            <li class="selected"><a href="index.jsp">Home</a></li>
+                            <li><a>Search</a>
+                                <ul>
+                                    <li><a href="searchByGO.jsp">By GO</a></li>
+                                    <li><a href="searchByGene.jsp">By Gene</a></li>
+                                    <li><a href="searchByDataset.jsp">By Dataset</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blast.jsp">BLAST</a></li>
+                            <li><a href="download.jsp">Download</a>
+                                <!--   <ul>    
+                                       <li><a href="./dataset/CCcontigs.fasta" download="CCcontigs.fasta">Reads CA</a></li>
+                                       <li><a href="./dataset/CAcontigs.fasta" download="CAcontigs.fasta">Contigs CA</a></li>                                
+                                       <li><a href="./dataset/CCreads.fasta" download="CCreads.fasta">Reads CC</a></li>
+                                       <li><a href="./dataset/CAcontigs.fasta" download="CAcontigs.fasta">Contigs CC</a></li>
+                                   </ul> -->
+                            </li>
+                            <li><a href="statistics.jsp">Statistics</a></li>
+                            <li><a href="team.jsp">Team</a></li>
+                        </ul>
+                    </div>
+                </header>
+                <!--end header -->
+            </div>
+            <!--container -->
+        </div>
+        <!--wrapper -->
     </body>
 </html>
