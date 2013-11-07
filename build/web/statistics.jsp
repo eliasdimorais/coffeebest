@@ -24,9 +24,8 @@
                 <c:import url="cabecalho_cmenu.jsp"/>
             </div>
             <div id="content" class="clearfix shadow">
-                <img class="aligncenter tamanho" src="images/esquema_blast1.jpeg" style="size: auto"> 
-                <img class="aligncenter tamanho" src="images/esquema_blast2.jpeg"> 
-                <img class="aligncenter tamanho" src="images/esquema_blast2.jpeg"> 
+                <img class="aligncenter tamanho" src="images/bank_graphic_v2.jpg" style="size: auto"> 
+                
             </div>
 
             <div id="footer" class="shadow">

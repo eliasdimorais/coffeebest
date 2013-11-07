@@ -158,7 +158,7 @@ img.alignleft,img.aligncenter,img.alignright{background:#fff;padding:4px;margin-
 .alignleft{float:left;margin-right:30px;}
 .alignright{float:right;margin-left:30px;}
 .aligncenter{text-align:center;display:block;clear:both;margin:5px auto;}
-img.tamanho{width: 850px; height: 650px}
+img.tamanho{width: 850px; height: 1200px}
 
 /* Additional classes */
 .shadow{background:url(images/shadow.png) top center no-repeat;}
