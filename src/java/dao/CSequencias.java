@@ -16,6 +16,7 @@ import modelo.MSequencias;
 /**
  *
  * @author bruno
+ * @author 2 modifications: Elias 
  */
 public class CSequencias {
 
@@ -29,7 +30,8 @@ public class CSequencias {
 
         List<modelo.MSequencias> listSequencias = new ArrayList<modelo.MSequencias>();
         StringBuilder sb = new StringBuilder();
-        sb.append("SELECT s.header AS q_header, s.length AS q_length, s.pk_sequencia AS pk_sequencia, s.sequencia AS q_sequencia, d.nome AS q_dataset, s.fk_dataset AS pk_dataset FROM sequencias s INNER JOIN dataset d ON pk_dataset = fk_dataset WHERE fk_dataset ");
+        sb.append("SELECT s.header AS q_header, s.length AS q_length, s.pk_sequencia AS pk_sequencia, s.sequencia AS q_sequencia, d.nome AS q_dataset, s.fk_dataset AS pk_dataset FROM sequencias s "
+                + "INNER JOIN dataset d ON pk_dataset = fk_dataset WHERE fk_dataset ");
         if (dataset.trim().equals("0")) {
             sb.append("<=7");
         } else {

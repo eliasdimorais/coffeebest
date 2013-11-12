@@ -10,7 +10,7 @@ import java.sql.DriverManager;
 
 /**
  *
- * @author bruno
+ * @author bruno e elias
  */
 public class ConnectionFactory {
 
@@ -18,7 +18,7 @@ public class ConnectionFactory {
         try {
             String usuario = "postgres";
             String senha = "postgres";
-            String urlconexao = "jdbc:postgresql://localhost:5432/iapar";
+            String urlconexao = "jdbc:postgresql://localhost:5432/coffebest";
 
             Class.forName("org.postgresql.Driver");
             DriverManager.getConnection(urlconexao, usuario, senha);

@@ -114,7 +114,7 @@
                         </ul>
                         <div class="desc">
                             <p>
-                                <b>  Bruno Hideki Arabori 
+                                <b> Bruno Hideki Arabori 
                                     <a href="http://lattes.cnpq.br/5183030452171918">[Lattes]</a></b><br/> 
                                 Undergraduation in Systems Analysis and Development [2012] 
                                 at the Federal University of Technology - Paraná - Brazil (UTFPR)
