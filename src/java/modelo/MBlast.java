@@ -8,125 +8,77 @@ package modelo;
  *
  * @author bruno
  */
-public abstract class MBlast {
-    private int pk_blast;
-    private int pk_query;   
-    private int alignmentLength;
-    private int q_start;
-    private int q_end;
-    private int s_start;
-    private int s_end;
-    private float identities_pctm;
-    private int identities;    
-    private float q_cobertura;
-    private float s_cobertura;
-    private double score;
-    private boolean best_hit;
+public class MBlast {
+    private String sbj_name;
+    private String sbj_dataset;
+    private String sbj_length;
+    private int identity;
+    private int score;
+    private String strand_qry;
+    private String strand_sbj;
+    private int seq;
 
-    
-
-    public int getPk_blast() {
-        return pk_blast;
+    public int getSeq() {
+        return seq;
     }
 
-    public void setPk_blast(int pk_blast) {
-        this.pk_blast = pk_blast;
+    public void setSeq(int seq) {
+        this.seq = seq;
     }
 
-    public int getPk_query() {
-        return pk_query;
+    public String getSbj_name() {
+        return sbj_name;
     }
 
-    public void setPk_query(int pk_query) {
-        this.pk_query = pk_query;
-    }    
-
-    public int getAlignmentLength() {
-        return alignmentLength;
+    public void setSbj_name(String sbj_name) {
+        this.sbj_name = sbj_name;
     }
 
-    public void setAlignmentLength(int alignmentLength) {
-        this.alignmentLength = alignmentLength;
+    public String getSbj_dataset() {
+        return sbj_dataset;
     }
 
-    public int getQ_start() {
-        return q_start;
+    public void setSbj_dataset(String sbj_dataset) {
+        this.sbj_dataset = sbj_dataset;
     }
 
-    public void setQ_start(int q_start) {
-        this.q_start = q_start;
+    public String getSbj_length() {
+        return sbj_length;
     }
 
-    public int getQ_end() {
-        return q_end;
+    public void setSbj_length(String sbj_length) {
+        this.sbj_length = sbj_length;
     }
 
-    public void setQ_end(int q_end) {
-        this.q_end = q_end;
+    public int getIdentity() {
+        return identity;
     }
 
-    public int getS_start() {
-        return s_start;
+    public void setIdentity(int identity) {
+        this.identity = identity;
     }
 
-    public void setS_start(int s_start) {
-        this.s_start = s_start;
-    }
-
-    public int getS_end() {
-        return s_end;
-    }
-
-    public void setS_end(int s_end) {
-        this.s_end = s_end;
-    }
-
-    public float getIdentities_pctm() {
-        return identities_pctm;
-    }
-
-    public void setIdentities_pctm(float identities_pctm) {
-        this.identities_pctm = identities_pctm;
-    }
-    
-    public int getIdentities() {
-        return identities;
-    }
-
-    public void setIdentities(int identities) {
-        this.identities = identities;
-    }
-
-    public float getQ_cobertura() {
-        return q_cobertura;
-    }
-
-    public void setQ_cobertura(float q_cobertura) {
-        this.q_cobertura = q_cobertura;
-    }
-
-    public float getS_cobertura() {
-        return s_cobertura;
-    }
-
-    public void setS_cobertura(float s_cobertura) {
-        this.s_cobertura = s_cobertura;
-    }
-
-    public double getScore() {
+    public int getScore() {
         return score;
     }
 
-    public void setScore(double score) {
+    public void setScore(int score) {
         this.score = score;
     }
-    
-    public boolean isBest_hit() {
-        return best_hit;
+
+    public String getStrand_qry() {
+        return strand_qry;
     }
 
-    public void setBest_hit(boolean best_hit) {
-        this.best_hit = best_hit;
+    public void setStrand_qry(String strand_qry) {
+        this.strand_qry = strand_qry;
     }
-    
+
+    public String getStrand_sbj() {
+        return strand_sbj;
+    }
+
+    public void setStrand_sbj(String strand_sbj) {
+        this.strand_sbj = strand_sbj;
+    }
 }

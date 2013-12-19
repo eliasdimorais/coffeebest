@@ -20,8 +20,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import org.apache.commons.fileupload.DiskFileUpload;
 import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.FileUpload;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 /**
  *
@@ -42,7 +44,7 @@ public class Upload extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String diretorio = request.getServletContext().getContext("/saest3").getRealPath("/");
+        String diretorio = request.getServletContext().getContext("/coffeebEST").getRealPath("/");
 
 
         HttpSession sessao = request.getSession();
@@ -61,11 +63,14 @@ public class Upload extends HttpServlet {
 
         try {
 
-            DiskFileUpload fu = new DiskFileUpload();
+            //FileUpload fu = new FileUpload();
+            //fu.setSizeMax(100000000);
+            //List fileItems = fu.parseRequest(request);
 
-            fu.setSizeMax(100000000);
-            List fileItems = fu.parseRequest(request);
-
+            
+            List<FileItem> fileItems = new ServletFileUpload(
+                          new DiskFileItemFactory()).parseRequest(request);
+            
             String sequencia = "";
             String dataset = diretorio + "dataset/";
             //boolean f; //filtro dust

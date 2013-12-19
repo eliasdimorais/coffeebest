@@ -67,38 +67,13 @@
                     </li>
                     <li><a href="blast.jsp">BLAST</a></li>
                     <li><a href="download.jsp">Download</a>
-                        <!--   <ul>    
-                               <li><a href="./dataset/CCcontigs.fasta" download="CCcontigs.fasta">Reads CA</a></li>
-                               <li><a href="./dataset/CAcontigs.fasta" download="CAcontigs.fasta">Contigs CA</a></li>                                
-                               <li><a href="./dataset/CCreads.fasta" download="CCreads.fasta">Reads CC</a></li>
-                               <li><a href="./dataset/CAcontigs.fasta" download="CAcontigs.fasta">Contigs CC</a></li>
-                           </ul> -->
+                       
                     </li>
                     <li><a href="statistics.jsp">Statistics</a></li>
                     <li><a href="team.jsp">Team</a></li>
                 </ul>
             </div>
         </header>
-        <!--end header -->
-        <!--    
-            <a href="index.jsp"><img width="30%" src="images/logo.png" alt="" /></a>
-          <div id="nav" class="clearfix shadow">
-                <ul id="topnav" class="sf-menu">   
-                    <li><a href="index.jsp">Home</a></li>
-                    <li><a href="about-us.jsp">About us</a></li>
-                    <li><a href="searchByDataset.jsp">Search</a></li>  
-                    <ul>
-                        <li><a href="#">By ID</a></li>
-                        <li><a href="#">By Gene</a></li>
-                        <li><a href="#">By GO</a></li>
-                    </ul>
-                    <li><a href="blast.jsp">BLAST</a></li>
-                    <li><a href="http://lemur.amu.edu.pl/share/php/mirnest/downloads.php">Download</a></li>
-                    <li><a href="statistics.jsp">Statistics</a></li>
-                    <li><a href="team.jsp">Team</a></li>
-                </ul>
-            </div> -->
-
-        <hr/>
+       <hr/>
     </body>
 </html>

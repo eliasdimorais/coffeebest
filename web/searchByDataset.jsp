@@ -45,7 +45,7 @@
             </div>
             <div id="content" class="clearfix shadow">  
                 <div class="container940">
-                    <h2 class="widget-title">Search dy Dataset</h2>
+                    <h2 class="widget-title">Search by Dataset</h2>
                     <div id="conteudo">
                         <form action="controlador" method="GET" target="frame">
                             <ul style="list-style-type: none; list-style-position: outside">
@@ -77,20 +77,22 @@
                                 <li>
                                     <input type="radio" name="filtro" value="0" checked> no filter
                                 </li>
-                                <li>
-                                    <input type="radio" name="filtro" value="1">  With Hit in CA
+                                 <li>
+                                    <input type="radio" name="filtro" value="2"> With Hit in CC Clusters
                                     <ul style="list-style-type: none; list-style-position: inside">
-                                        <li style="padding-left: 20px">Coverage </br>Cobertura: <input type="text" id="cb1" name="cobertura_f1"  maxlength="2" size="2" value="85"  style="border: 2.5px solid #bababa;" >%</li>
-                                        <li style="padding-left: 20px">Identities: <input type="text" id="id1" name="identidade_f1" maxlength="2"  size="2" value="85"  style="border: 2.5px solid #bababa;" >%</li>
+                                        <li style="padding-left: 20px">Coverage: <input type="text" id="cb2" name="cobertura_f2" maxlength="2"  size="2" value="85"  style="border: 2.5px solid #bababa;">% (>= 85)</li>
+                                        <li style="padding-left: 20px">Identities: <input type="text" id="id2" name="identidade_f2" maxlength="2"  size="2" value="85"  style="border: 2.5px solid #bababa;">% (>= 85)</li>
                                     </ul>
                                 </li>
+                                
                                 <li>
-                                    <input type="radio" name="filtro" value="2"> CC hit fruit without CA and CC hit
+                                    <input type="radio" name="filtro" value="1">  Hits in CA Clusters that passed CC Clusters
                                     <ul style="list-style-type: none; list-style-position: inside">
-                                        <li style="padding-left: 20px">Coverage: <input type="text" id="cb2" name="cobertura_f2" maxlength="2"  size="2" value="85"  style="border: 2.5px solid #bababa;">%</li>
-                                        <li style="padding-left: 20px">Identities: <input type="text" id="id2" name="identidade_f2" maxlength="2"  size="2" value="85"  style="border: 2.5px solid #bababa;">%</li>
+                                        <li style="padding-left: 20px">Coverage </br>Cobertura: <input type="text" id="cb1" name="cobertura_f1"  maxlength="2" size="2" value="85"  style="border: 2.5px solid #bababa;" >% (>= 85)</li>
+                                        <li style="padding-left: 20px">Identities: <input type="text" id="id1" name="identidade_f1" maxlength="2"  size="2" value="85"  style="border: 2.5px solid #bababa;" >% (>= 85)</li>
                                     </ul>
                                 </li>
+                               
                             </ul>
                             <input type="submit" value="Search by filters">
                             <br>

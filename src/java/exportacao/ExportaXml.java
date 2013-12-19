@@ -29,23 +29,19 @@ public class ExportaXml implements Exportacao{
             for (MSequencias seq : sequencias) {                
                 fos.write("\n<sequence_data>".getBytes());
                 fos.write("\n\t<id>".getBytes());
-                fos.write(seq.getPk_sequencia().getBytes());
+                fos.write(seq.getId().getBytes());
                 fos.write("</id>".getBytes());
                 
                 fos.write("\n\t<name>".getBytes());
-                fos.write(seq.getHeader().getBytes());
+                fos.write(seq.getQuery().getBytes());
                 fos.write("</name>".getBytes());
-                
-                fos.write("\n\t<length>".getBytes());
-                fos.write(seq.getLength().getBytes());
-                fos.write("</length>".getBytes());
                 
                 fos.write("\n\t<dataset> ".getBytes());
                 fos.write(seq.getDataset().getBytes());
                 fos.write("</dataset>".getBytes());
                 
                 fos.write("\n\t<sequence>\n".getBytes());
-                fos.write(seq.getSequencia().getBytes());
+                fos.write(seq.getSequences().getBytes());
                 fos.write("\n\t</sequence>".getBytes());
            
                 fos.write("\n</sequence_data>\n".getBytes());

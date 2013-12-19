@@ -11,7 +11,7 @@ import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.apache.commons.fileupload.DiskFileUpload;
+import org.apache.commons.fileupload.FileUpload;
 import org.apache.commons.fileupload.FileItem;
 
 /**
@@ -32,7 +32,7 @@ public class UploadArquivos implements Logica {
 
         try {
 
-            DiskFileUpload fu = new DiskFileUpload();
+            FileUpload fu = new FileUpload();
 
             fu.setSizeMax(100000000);
             List fileItems = fu.parseRequest(request);
@@ -52,7 +52,7 @@ public class UploadArquivos implements Logica {
             }
 
 
-            RequestDispatcher rd = request.getRequestDispatcher("resultado_blast.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("blast_result.jsp");
             rd.forward(request, response);
 
         } catch (Exception e) {

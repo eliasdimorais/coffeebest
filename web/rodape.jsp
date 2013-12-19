@@ -16,7 +16,9 @@
         <div id="footer" class="shadow">
             <p>
                 <br/>
-                &copy; 2012-2013 System and Layout developed by <a href="http://be.net/eliasdemoraes">Elias de M. Fernandes</a>
+                &copy; 2013 - System developed by Bruno, Guilherme and Elias 
+                | Layout developed by <a href="http://be.net/eliasdemoraes">Elias de M. Fernandes</a>
+
             </p>
         </div>
 

@@ -1,0 +1,868 @@
+BLASTN 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+Query= ID: 33676 | NAME: Contig4667
+         (246 letters)
+
+Database: cc 
+           18,007 sequences; 11,706,502 total letters
+
+Searching..................................................done
+
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+ID: 33676 | NAME: Contig4667                                          488   e-138
+ID: 41811 | NAME: CC00-XX-LF1-016-H05-TL.F                             32   0.53 
+ID: 39463 | NAME: CC00-XX-EC1-019-A06-EC.F                             32   0.53 
+ID: 38533 | NAME: CC00-XX-PP1-111-B11-TL.F                             32   0.53 
+ID: 36597 | NAME: Contig7588                                           32   0.53 
+ID: 34554 | NAME: Contig5545                                           32   0.53 
+ID: 32102 | NAME: Contig3093                                           32   0.53 
+ID: 44731 | NAME: CC00-XX-PP1-083-B07-TL.F                             30   2.1  
+ID: 41808 | NAME: CC00-XX-EC1-014-F10-EC.F                             30   2.1  
+ID: 37059 | NAME: Contig8050                                           30   2.1  
+ID: 36907 | NAME: Contig7898                                           30   2.1  
+ID: 36511 | NAME: Contig7502                                           30   2.1  
+ID: 32602 | NAME: Contig3593                                           30   2.1  
+ID: 32565 | NAME: Contig3556                                           30   2.1  
+ID: 31842 | NAME: Contig2833                                           30   2.1  
+ID: 31115 | NAME: Contig2106                                           30   2.1  
+ID: 46167 | NAME: CC00-XX-EC1-057-D05-EC.F                             28   8.3  
+ID: 46033 | NAME: CC00-XX-SE2-046-C04-TL.F                             28   8.3  
+ID: 44713 | NAME: CC00-XX-SH3-027-F12-EM.F                             28   8.3  
+ID: 44294 | NAME: CC00-XX-PP1-105-E07-TL.F                             28   8.3  
+ID: 43938 | NAME: CC00-XX-EC1-058-F05-EC.F                             28   8.3  
+ID: 43221 | NAME: CC00-XX-SE4-063-D10-TL.F                             28   8.3  
+ID: 42717 | NAME: CC00-XX-EC1-065-E03-EC.F                             28   8.3  
+ID: 42636 | NAME: CC00-XX-EC1-056-B09-EC.F                             28   8.3  
+ID: 42308 | NAME: CC00-XX-SE3-132-G05-TL.F                             28   8.3  
+ID: 41869 | NAME: CC00-XX-LF1-033-C03-TL.F                             28   8.3  
+ID: 41834 | NAME: CC00-XX-SE2-095-A07-TL.F                             28   8.3  
+ID: 41430 | NAME: CC00-XX-LF1-104-A09-TL.F                             28   8.3  
+ID: 40540 | NAME: CC00-XX-SE3-127-B10-TL.F                             28   8.3  
+ID: 38385 | NAME: CC00-XX-SE4-063-B02-TL.F                             28   8.3  
+ID: 38022 | NAME: CC00-XX-LF1-093-B05-TL.F                             28   8.3  
+ID: 36818 | NAME: Contig7809                                           28   8.3  
+ID: 36774 | NAME: Contig7765                                           28   8.3  
+ID: 36762 | NAME: Contig7753                                           28   8.3  
+ID: 36563 | NAME: Contig7554                                           28   8.3  
+ID: 36318 | NAME: Contig7309                                           28   8.3  
+ID: 36104 | NAME: Contig7095                                           28   8.3  
+ID: 36029 | NAME: Contig7020                                           28   8.3  
+ID: 35592 | NAME: Contig6583                                           28   8.3  
+ID: 34892 | NAME: Contig5883                                           28   8.3  
+ID: 33552 | NAME: Contig4543                                           28   8.3  
+ID: 33434 | NAME: Contig4425                                           28   8.3  
+ID: 33023 | NAME: Contig4014                                           28   8.3  
+ID: 32806 | NAME: Contig3797                                           28   8.3  
+ID: 32157 | NAME: Contig3148                                           28   8.3  
+ID: 32085 | NAME: Contig3076                                           28   8.3  
+ID: 32010 | NAME: Contig3001                                           28   8.3  
+ID: 31712 | NAME: Contig2703                                           28   8.3  
+ID: 31525 | NAME: Contig2516                                           28   8.3  
+ID: 31241 | NAME: Contig2232                                           28   8.3  
+ID: 30078 | NAME: Contig1069                                           28   8.3  
+ID: 29658 | NAME: Contig649                                            28   8.3  
+ID: 29567 | NAME: Contig558                                            28   8.3  
+ID: 29552 | NAME: Contig543                                            28   8.3  
+ID: 29105 | NAME: Contig96                                             28   8.3  
+
+>ID: 33676 | NAME: Contig4667
+          Length = 246
+
+ Score =  488 bits (246), Expect = e-138
+ Identities = 246/246 (100%)
+ Strand = Plus / Plus
+
+                                                                       
+Query: 1   gagggcggggttctgggttttggtaaagattcagtttttatttctactagagttttttct 60
+           ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct: 1   gagggcggggttctgggttttggtaaagattcagtttttatttctactagagttttttct 60
+
+                                                                       
+Query: 61  tagcgatttattataataaagtaatggggaatgttaatggaagagaggatggtggtgatg 120
+           ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct: 61  tagcgatttattataataaagtaatggggaatgttaatggaagagaggatggtggtgatg 120
+
+                                                                       
+Query: 121 ggaacagcccttctggacttgatgcggaggatggtggtggcggtgcgcagcaatctttgg 180
+           ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct: 121 ggaacagcccttctggacttgatgcggaggatggtggtggcggtgcgcagcaatctttgg 180
+
+                                                                       
+Query: 181 ccgctcaagagggtagatatggcaatcatgctgatgtatgttttttcatgggcccatccg 240
+           ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct: 181 ccgctcaagagggtagatatggcaatcatgctgatgtatgttttttcatgggcccatccg 240
+
+                 
+Query: 241 ccccgc 246
+           ||||||
+Sbjct: 241 ccccgc 246
+
+
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                        
+Query: 67 tttattataataaa 80
+          ||||||||||||||
+Sbjct: 80 tttattataataaa 67
+
+
+>ID: 41811 | NAME: CC00-XX-LF1-016-H05-TL.F
+          Length = 555
+
+ Score = 32.2 bits (16), Expect = 0.53
+ Identities = 16/16 (100%)
+ Strand = Plus / Plus
+
+                           
+Query: 215 tgtatgttttttcatg 230
+           ||||||||||||||||
+Sbjct: 207 tgtatgttttttcatg 222
+
+
+>ID: 39463 | NAME: CC00-XX-EC1-019-A06-EC.F
+          Length = 627
+
+ Score = 32.2 bits (16), Expect = 0.53
+ Identities = 16/16 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 150 gatggtggtggcggtg 165
+           ||||||||||||||||
+Sbjct: 510 gatggtggtggcggtg 495
+
+
+>ID: 38533 | NAME: CC00-XX-PP1-111-B11-TL.F
+          Length = 502
+
+ Score = 32.2 bits (16), Expect = 0.53
+ Identities = 16/16 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 89  gaatgttaatggaaga 104
+           ||||||||||||||||
+Sbjct: 370 gaatgttaatggaaga 355
+
+
+>ID: 36597 | NAME: Contig7588
+          Length = 904
+
+ Score = 32.2 bits (16), Expect = 0.53
+ Identities = 19/20 (95%)
+ Strand = Plus / Minus
+
+                               
+Query: 107 ggatggtggtgatgggaaca 126
+           ||||| ||||||||||||||
+Sbjct: 625 ggatgttggtgatgggaaca 606
+
+
+>ID: 34554 | NAME: Contig5545
+          Length = 602
+
+ Score = 32.2 bits (16), Expect = 0.53
+ Identities = 16/16 (100%)
+ Strand = Plus / Minus
+
+                           
+Query: 69  tattataataaagtaa 84
+           ||||||||||||||||
+Sbjct: 375 tattataataaagtaa 360
+
+
+>ID: 32102 | NAME: Contig3093
+          Length = 619
+
+ Score = 32.2 bits (16), Expect = 0.53
+ Identities = 16/16 (100%)
+ Strand = Plus / Plus
+
+                           
+Query: 105 gaggatggtggtgatg 120
+           ||||||||||||||||
+Sbjct: 484 gaggatggtggtgatg 499
+
+
+>ID: 44731 | NAME: CC00-XX-PP1-083-B07-TL.F
+          Length = 600
+
+ Score = 30.2 bits (15), Expect = 2.1
+ Identities = 18/19 (94%)
+ Strand = Plus / Minus
+
+                              
+Query: 67  tttattataataaagtaat 85
+           ||||| |||||||||||||
+Sbjct: 539 tttatcataataaagtaat 521
+
+
+>ID: 41808 | NAME: CC00-XX-EC1-014-F10-EC.F
+          Length = 744
+
+ Score = 30.2 bits (15), Expect = 2.1
+ Identities = 15/15 (100%)
+ Strand = Plus / Minus
+
+                          
+Query: 150 gatggtggtggcggt 164
+           |||||||||||||||
+Sbjct: 466 gatggtggtggcggt 452
+
+
+>ID: 37059 | NAME: Contig8050
+          Length = 725
+
+ Score = 30.2 bits (15), Expect = 2.1
+ Identities = 15/15 (100%)
+ Strand = Plus / Plus
+
+                          
+Query: 152 tggtggtggcggtgc 166
+           |||||||||||||||
+Sbjct: 333 tggtggtggcggtgc 347
+
+
+>ID: 36907 | NAME: Contig7898
+          Length = 946
+
+ Score = 30.2 bits (15), Expect = 2.1
+ Identities = 15/15 (100%)
+ Strand = Plus / Plus
+
+                          
+Query: 131 ttctggacttgatgc 145
+           |||||||||||||||
+Sbjct: 350 ttctggacttgatgc 364
+
+
+>ID: 36511 | NAME: Contig7502
+          Length = 692
+
+ Score = 30.2 bits (15), Expect = 2.1
+ Identities = 15/15 (100%)
+ Strand = Plus / Plus
+
+                          
+Query: 203 caatcatgctgatgt 217
+           |||||||||||||||
+Sbjct: 654 caatcatgctgatgt 668
+
+
+>ID: 32602 | NAME: Contig3593
+          Length = 676
+
+ Score = 30.2 bits (15), Expect = 2.1
+ Identities = 15/15 (100%)
+ Strand = Plus / Minus
+
+                          
+Query: 151 atggtggtggcggtg 165
+           |||||||||||||||
+Sbjct: 150 atggtggtggcggtg 136
+
+
+>ID: 32565 | NAME: Contig3556
+          Length = 1740
+
+ Score = 30.2 bits (15), Expect = 2.1
+ Identities = 15/15 (100%)
+ Strand = Plus / Plus
+
+                          
+Query: 108 gatggtggtgatggg 122
+           |||||||||||||||
+Sbjct: 721 gatggtggtgatggg 735
+
+
+>ID: 31842 | NAME: Contig2833
+          Length = 751
+
+ Score = 30.2 bits (15), Expect = 2.1
+ Identities = 15/15 (100%)
+ Strand = Plus / Minus
+
+                          
+Query: 129 ccttctggacttgat 143
+           |||||||||||||||
+Sbjct: 472 ccttctggacttgat 458
+
+
+>ID: 31115 | NAME: Contig2106
+          Length = 839
+
+ Score = 30.2 bits (15), Expect = 2.1
+ Identities = 15/15 (100%)
+ Strand = Plus / Minus
+
+                          
+Query: 12  tctgggttttggtaa 26
+           |||||||||||||||
+Sbjct: 241 tctgggttttggtaa 227
+
+
+>ID: 46167 | NAME: CC00-XX-EC1-057-D05-EC.F
+          Length = 511
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                         
+Query: 134 tggacttgatgcgg 147
+           ||||||||||||||
+Sbjct: 308 tggacttgatgcgg 321
+
+
+>ID: 46033 | NAME: CC00-XX-SE2-046-C04-TL.F
+          Length = 610
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                        
+Query: 10 gttctgggttttgg 23
+          ||||||||||||||
+Sbjct: 71 gttctgggttttgg 84
+
+
+>ID: 44713 | NAME: CC00-XX-SH3-027-F12-EM.F
+          Length = 743
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 103 gagaggatggtggt 116
+           ||||||||||||||
+Sbjct: 100 gagaggatggtggt 87
+
+
+>ID: 44294 | NAME: CC00-XX-PP1-105-E07-TL.F
+          Length = 496
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                         
+Query: 20  ttggtaaagattca 33
+           ||||||||||||||
+Sbjct: 152 ttggtaaagattca 165
+
+
+>ID: 43938 | NAME: CC00-XX-EC1-058-F05-EC.F
+          Length = 634
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 133 ctggacttgatgcg 146
+           ||||||||||||||
+Sbjct: 65  ctggacttgatgcg 52
+
+
+>ID: 43221 | NAME: CC00-XX-SE4-063-D10-TL.F
+          Length = 480
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                         
+Query: 131 ttctggacttgatg 144
+           ||||||||||||||
+Sbjct: 335 ttctggacttgatg 348
+
+
+>ID: 42717 | NAME: CC00-XX-EC1-065-E03-EC.F
+          Length = 617
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 150 gatggtggtggcgg 163
+           ||||||||||||||
+Sbjct: 50  gatggtggtggcgg 37
+
+
+>ID: 42636 | NAME: CC00-XX-EC1-056-B09-EC.F
+          Length = 194
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 19  tttggtaaagattc 32
+           ||||||||||||||
+Sbjct: 103 tttggtaaagattc 90
+
+
+>ID: 42308 | NAME: CC00-XX-SE3-132-G05-TL.F
+          Length = 717
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 150 gatggtggtggcgg 163
+           ||||||||||||||
+Sbjct: 90  gatggtggtggcgg 77
+
+
+>ID: 41869 | NAME: CC00-XX-LF1-033-C03-TL.F
+          Length = 666
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 107 ggatggtggtgatg 120
+           ||||||||||||||
+Sbjct: 271 ggatggtggtgatg 258
+
+
+>ID: 41834 | NAME: CC00-XX-SE2-095-A07-TL.F
+          Length = 938
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                         
+Query: 19  tttggtaaagattc 32
+           ||||||||||||||
+Sbjct: 564 tttggtaaagattc 577
+
+
+>ID: 41430 | NAME: CC00-XX-LF1-104-A09-TL.F
+          Length = 379
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                         
+Query: 147 gaggatggtggtgg 160
+           ||||||||||||||
+Sbjct: 92  gaggatggtggtgg 105
+
+
+>ID: 40540 | NAME: CC00-XX-SE3-127-B10-TL.F
+          Length = 538
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 152 tggtggtggcggtg 165
+           ||||||||||||||
+Sbjct: 208 tggtggtggcggtg 195
+
+
+>ID: 38385 | NAME: CC00-XX-SE4-063-B02-TL.F
+          Length = 671
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 108 gatggtggtgatgg 121
+           ||||||||||||||
+Sbjct: 63  gatggtggtgatgg 50
+
+
+>ID: 38022 | NAME: CC00-XX-LF1-093-B05-TL.F
+          Length = 690
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                         
+Query: 22  ggtaaagattcagt 35
+           ||||||||||||||
+Sbjct: 539 ggtaaagattcagt 552
+
+
+>ID: 36818 | NAME: Contig7809
+          Length = 654
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                         
+Query: 11  ttctgggttttggt 24
+           ||||||||||||||
+Sbjct: 599 ttctgggttttggt 612
+
+
+>ID: 36774 | NAME: Contig7765
+          Length = 1266
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 168 cagcaatctttggc 181
+           ||||||||||||||
+Sbjct: 549 cagcaatctttggc 536
+
+
+>ID: 36762 | NAME: Contig7753
+          Length = 852
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 152 tggtggtggcggtg 165
+           ||||||||||||||
+Sbjct: 249 tggtggtggcggtg 236
+
+
+>ID: 36563 | NAME: Contig7554
+          Length = 708
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                         
+Query: 176 tttggccgctcaag 189
+           ||||||||||||||
+Sbjct: 614 tttggccgctcaag 627
+
+
+>ID: 36318 | NAME: Contig7309
+          Length = 606
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 152 tggtggtggcggtg 165
+           ||||||||||||||
+Sbjct: 96  tggtggtggcggtg 83
+
+
+>ID: 36104 | NAME: Contig7095
+          Length = 1227
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 17/18 (94%)
+ Strand = Plus / Plus
+
+                             
+Query: 148 aggatggtggtggcggtg 165
+           ||||||||||||| ||||
+Sbjct: 300 aggatggtggtggtggtg 317
+
+
+>ID: 36029 | NAME: Contig7020
+          Length = 266
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 153 ggtggtggcggtgc 166
+           ||||||||||||||
+Sbjct: 230 ggtggtggcggtgc 217
+
+
+>ID: 35592 | NAME: Contig6583
+          Length = 1138
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 152 tggtggtggcggtg 165
+           ||||||||||||||
+Sbjct: 173 tggtggtggcggtg 160
+
+
+>ID: 34892 | NAME: Contig5883
+          Length = 764
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                         
+Query: 108 gatggtggtgatgg 121
+           ||||||||||||||
+Sbjct: 741 gatggtggtgatgg 754
+
+
+>ID: 33552 | NAME: Contig4543
+          Length = 1122
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 212 tgatgtatgttttt 225
+           ||||||||||||||
+Sbjct: 136 tgatgtatgttttt 123
+
+
+>ID: 33434 | NAME: Contig4425
+          Length = 816
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 111 ggtggtgatgggaa 124
+           ||||||||||||||
+Sbjct: 160 ggtggtgatgggaa 147
+
+
+>ID: 33023 | NAME: Contig4014
+          Length = 446
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 195 agatatggcaatca 208
+           ||||||||||||||
+Sbjct: 325 agatatggcaatca 312
+
+
+>ID: 32806 | NAME: Contig3797
+          Length = 775
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 37  tttatttctactag 50
+           ||||||||||||||
+Sbjct: 515 tttatttctactag 502
+
+
+>ID: 32157 | NAME: Contig3148
+          Length = 1260
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 131 ttctggacttgatg 144
+           ||||||||||||||
+Sbjct: 93  ttctggacttgatg 80
+
+
+>ID: 32085 | NAME: Contig3076
+          Length = 773
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 108 gatggtggtgatgg 121
+           ||||||||||||||
+Sbjct: 279 gatggtggtgatgg 266
+
+
+>ID: 32010 | NAME: Contig3001
+          Length = 753
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 124 acagcccttctgga 137
+           ||||||||||||||
+Sbjct: 147 acagcccttctgga 134
+
+
+>ID: 31712 | NAME: Contig2703
+          Length = 1653
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                         
+Query: 78  aaagtaatggggaa 91
+           ||||||||||||||
+Sbjct: 366 aaagtaatggggaa 379
+
+
+>ID: 31525 | NAME: Contig2516
+          Length = 1162
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                         
+Query: 154 gtggtggcggtgcg 167
+           ||||||||||||||
+Sbjct: 209 gtggtggcggtgcg 222
+
+
+>ID: 31241 | NAME: Contig2232
+          Length = 834
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 110 tggtggtgatggga 123
+           ||||||||||||||
+Sbjct: 243 tggtggtgatggga 230
+
+
+>ID: 30078 | NAME: Contig1069
+          Length = 547
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 150 gatggtggtggcgg 163
+           ||||||||||||||
+Sbjct: 489 gatggtggtggcgg 476
+
+
+>ID: 29658 | NAME: Contig649
+          Length = 929
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 108 gatggtggtgatgg 121
+           ||||||||||||||
+Sbjct: 44  gatggtggtgatgg 31
+
+
+>ID: 29567 | NAME: Contig558
+          Length = 1134
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 108 gatggtggtgatgg 121
+           ||||||||||||||
+Sbjct: 93  gatggtggtgatgg 80
+
+
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 152 tggtggtggcggtg 165
+           ||||||||||||||
+Sbjct: 140 tggtggtggcggtg 127
+
+
+>ID: 29552 | NAME: Contig543
+          Length = 454
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Plus
+
+                         
+Query: 152 tggtggtggcggtg 165
+           ||||||||||||||
+Sbjct: 91  tggtggtggcggtg 104
+
+
+>ID: 29105 | NAME: Contig96
+          Length = 737
+
+ Score = 28.2 bits (14), Expect = 8.3
+ Identities = 14/14 (100%)
+ Strand = Plus / Minus
+
+                         
+Query: 152 tggtggtggcggtg 165
+           ||||||||||||||
+Sbjct: 392 tggtggtggcggtg 379
+
+
+  Database: cc
+    Posted date:  Apr 26, 2013 10:14 AM
+  Number of letters in database: 11,706,502
+  Number of sequences in database:  18,007
+  
+Lambda     K      H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda     K      H
+    1.37    0.711     1.31 
+
+
+Matrix: blastn matrix:1 -3
+Gap Penalties: Existence: 5, Extension: 2
+Number of Sequences: 18007
+Number of Hits to DB: 33,868
+Number of extensions: 619
+Number of successful extensions: 619
+Number of sequences better than 10.0: 55
+Number of HSP's gapped: 617
+Number of HSP's successfully gapped: 57
+Length of query: 246
+Length of database: 11,706,502
+Length adjustment: 16
+Effective length of query: 230
+Effective length of database: 11,418,390
+Effective search space: 2626229700
+Effective search space used: 2626229700
+X1: 11 (21.8 bits)
+X2: 15 (29.7 bits)
+X3: 50 (99.1 bits)
+S1: 12 (24.3 bits)
+S2: 14 (28.2 bits)

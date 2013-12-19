@@ -6,57 +6,40 @@ package modelo;
 
 /**
  *
- * @author bruno
+ * @author bruno and elias
  */
 public class MSequencias {
-    private String pk_sequencia;
-    private String header;
-    private String sequencia;
-    private String length;
-    private String fk_dataset;
+    private String id;
+    private String query;
+    private String sequences;
     private String dataset;
+    private String description;
 
-    public String getPk_sequencia() {
-        return pk_sequencia;
+    public String getId() {
+        return id;
     }
 
-    public void setPk_sequencia(String pk_sequencia) {
-        this.pk_sequencia = pk_sequencia;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public String getHeader() {
-        return header;
+    public String getQuery() {
+        return query;
     }
 
-    public void setHeader(String header) {
-        this.header = header;
+    public void setQuery(String query) {
+        this.query = query;
     }
 
-    public String getSequencia() {
-        return sequencia;
+    public String getSequences() {
+        return sequences;
     }
 
-    public void setSequencia(String sequencia) {
-        this.sequencia = sequencia;
+    public void setSequences(String sequences) {
+        this.sequences = sequences;
     }
 
-    public String getLength() {
-        return length;
-    }
-
-    public void setLength(String length) {
-        this.length = length;
-    }
-
-    public String getFk_dataset() {
-        return fk_dataset;
-    }
-
-    public void setFk_dataset(String fk_dataset) {
-        this.fk_dataset = fk_dataset;
-    }
-
-    public String getDataset() {
+       public String getDataset() {
         return dataset;
     }
 
@@ -64,5 +47,12 @@ public class MSequencias {
         this.dataset = dataset;
     }
 
-   
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
 }

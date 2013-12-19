@@ -13,11 +13,11 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Droid+Sans' rel='stylesheet' type='text/css' />
-        <link rel="stylesheet" type="text/css" media="all" href="style.css" />
-        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-        <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
-          <link rel="shortcut icon" href="images/icon.ico" >
-        <title>index</title>
+        <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+        <script type="text/javascript" src="/css/js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="/css/js/jquery.nivo.slider.js"></script>
+        <link rel="shortcut icon" href="/images/icon.ico" >
+        <title>Page Not Found</title>
     </head>
 
     <body>

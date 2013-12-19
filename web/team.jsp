@@ -30,7 +30,7 @@
             <div id="content" class="no-sidebar" style="height: auto">
                 <h3><center>Team</center></h3>
                 <br/>
-                <ul class="gallery type-1">
+                <div class="gallery type-1">
                     <li data-id="aa">
                         <ul class="media">
                             <li><a ><img src="./images/paschoal.jpg" alt="" width="200" /></a></li>
@@ -53,7 +53,7 @@
                     <br/>
                     <li data-id="aa">
                         <ul class="media">
-                            <li><a ><img src="./images/elias.jpg" alt="" width="200" /></a></li>
+                            <li><a ><img src="./images/elias2013.jpg" alt="" width="200" /></a></li>
                         </ul>
                         <div class="desc">
                             <p><b> Elias de Moraes Fernandes
@@ -99,11 +99,48 @@
                                     <a href="http://lattes.cnpq.br/1177022282500069">[Lattes]</a></b> <br/> 
                                 Researcher at Embrapa Café<br/> 
                                 PhD in Plant Genetics – University of Guelph, Canada [1998]
-                                <br/> 
+                                <br/> </p>
                             <ul> <b> Research interests </b>
                                 <li>   Coffee Genomics</li>
                                 <li>   Coffee Biotechnology</li>
                             </ul>
+
+                        </div>
+                    </li>
+                    <br/>
+                    <li data-id="aa">
+                        <ul class="media">
+                            <li><a ><img src="./images/guilherme.jpeg" alt="" width="200" /></a></li>
+                        </ul>
+                        <div class="desc">
+                            <b> Guilherme Beraldo Barbosa
+                                <a href="http://lattes.cnpq.br/1405163083106781">[Lattes]</a></b><br/> 
+                            Undergraduation in Systems Analysis and Development
+                            at the Federal University of Technology - Paraná - Brazil (UTFPR)
+                            <ul> <b> Research interests </b>
+                                <li>   Long non coding RNAs</li>
+                                <li>   Kids Education System</li>
+                            </ul>
+
+                            </p>
+                        </div>
+                    </li>
+                    <br/>
+                    <li data-id="aa">
+                        <ul class="media">
+                            <li><a ><img src="./images/juliana.jpg" alt="" width="200" /></a></li>
+                        </ul>
+                        <div class="desc">
+
+                            <b> Juliana Costa Silva 
+                                <a href="http://lattes.cnpq.br/3058281149654363">[Lattes]</a></b><br/> 
+                            Undergraduation in Systems Analysis and Development
+                            at the Federal University of Technology - Paraná - Brazil (UTFPR)
+                            <ul> <b> Research interests </b>
+                                <li>  NGS data analysis</li>
+                                <li>   Transcriptomics</li>
+                            </ul>
+
                             </p>
                         </div>
                     </li>
@@ -144,7 +181,7 @@
                     </li>
                     <br/>
 
-                </ul>
+                </div>
             </div>
 
             <div id="footer" class="shadow">

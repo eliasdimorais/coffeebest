@@ -37,9 +37,9 @@ public class BValidaFasta {
             Matcher matcher = pattern.matcher(texto);
 
             if (matcher.find()) {
-                System.out.println("Encontrou");
+                System.out.println("Find! \n Encontrou");
             } else {
-                System.out.println("Não encontrou");
+                System.out.println("Not found  \n Não encontrou");
             }
 
             return false;
@@ -53,7 +53,7 @@ public class BValidaFasta {
     }
     
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("/mnt/backup/workspace_n/saest3/build/web/arquivos/1D50CD2129FE6FBF14BCF12D31ACBB49/download/13669368253401366936825341.fasta");
+        File file = new File("/home/servidorp206/REMODELAGEM-COFFEEBEST/ecoli.fasta");
         validaFasta(file);
     }
 }

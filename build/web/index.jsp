@@ -30,9 +30,8 @@
             <div class="slider-wrapper">
                 <div id="slider" class="nivoSlider">
                     <img src="images/slider1_coffea.jpg" alt="" />
-                    <img src="images/slider2_coffea.jpg" alt=""/>
+                    <img src="images/slider2_coffea.jpg" alt="" />
                     <img src="images/slider3_coffea.jpg" alt="" />
-                    <img src="images/slider0.jpg" alt="" />
                     <img src="images/iapar_utfpr-cp.jpg" alt="" />   
                 </div>
             </div>
@@ -45,23 +44,11 @@
             <div id="extended a" class="clearfix shadow">
                 <div id="trio1">
                     <div class="inner" >
-                        <p>The CoffeebEST (Coffee seed EST database) is an integrated resource of EST sequencing and annotation data from two Coffea species: C. arabica and C. canephora. In addition to EST data, sCoffeEST provides an catalogue of functionally annotated transcripts, based on Gene Onthology and PlantCyc database. The sCoffeEST is a collaboration between the Plant Biotechnology Laboratory at the Instituto Agronômico do Paraná, Londrina, Brazil and the Bioinformatics and Pattern Recognition Group, at Federal University of Technology - Paraná, Cornélio Procópio, Brazil.</p> 
+                        <p>The CoffeebEST (Coffee bean EST database) is an integrated resource of EST sequencing and annotation data from two <i>Coffea</i> species: 
+                            <i>C. arabica</i> and <i>C. canephora</i>. In addition to EST data, CoffeebEST provides an catalog of functionally annotated transcripts, based on Gene Onthology and PlantCyc database. 
+                            The CoffeebEST is a collaboration between the Plant Biotechnology Laboratory at the Instituto Agronômico do Paraná, Londrina, Brazil and the Bioinformatics and Pattern Recognition Group, at Federal University of Technology - Paraná, Cornélio Procópio, Brazil.</p> 
                     </div>
                 </div>
-                <!--
-                               <div id="trio2">
-                                       <div class="inner">
-                                               <a href="index.html"><img src="images/utfpr.jpg" alt="" /></a>
-                                       </div>
-                               </div>
-               
-                               <div id="trio3">
-                                       <div class="inner">
-                                               <a href="index.html"><img src="images/iapar.png" alt="" /></a>
-                                       </div>
-                               </div>
-                       </div>-->
-
                 <div id="extended" class="clearfix shadow">
                     <div id="footer">
                         <div class="inner2 shadow">

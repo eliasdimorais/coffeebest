@@ -10,7 +10,6 @@
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="javax.swing.text.Document"%>
-<%@page import="com.sun.xml.internal.ws.util.StringUtils"%>
 <%@page import="java.sql.ResultSet"%>
 
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -37,7 +36,7 @@
 
         <c:choose>
             <c:when test="${not empty paginacao}">                
-                <c:out value="${paginacao.todo.size()}" /> results Found
+                <c:out value="${paginacao.todo.size()}" /> Results Found
                 <br/>
                 <div style="width: 100%; alignment-baseline: central">                                        
                     <p:paginacao />
@@ -48,20 +47,21 @@
                     <thead>
                         <tr>
                             <th><b>ID</b></th>
-                            <th><b>header</b></th>
-                            <th><b>dataset</b></th>
-                            <th><b>length</b></th>
-                            <th><b>details</b></th>
+                            <th><b>Query</b></th>
+                            <%--<th><b>Sequence</b></th>--%>
+                            <th><b>Dataset</b></th>
+                            <th><b>Description</b></th>
                         </tr>
                     </thead>
                     <tbody>
                         <c:forEach items="${paginacao.getPagina()}" var="seq">
                             <tr>
-                                <td><c:out value="${seq.pk_sequencia}" /></td>
-                                <td><c:out value="${seq.header}" /></td>
+                                <td><c:out value="${seq.id}" /></td>
+                                <td><c:out value="${seq.query}" /></td>
+                                <%--<td><c:out value="${seq.sequences}" /></td>--%>
                                 <td><c:out value="${seq.dataset}" /></td>
-                                <td><c:out value="${seq.length}" /></td>
-                                <td><a href="./details.jsp?pk_sequencia=${seq.pk_sequencia}" target="_blank">see details</a></td>
+                                <td><c:out value="${seq.description}" /></td>
+                                <td><a href="./details.jsp?id=${seq.id}" target="_blank">see details</a></td>
                             </tr>
                         </c:forEach>
                     </tbody>

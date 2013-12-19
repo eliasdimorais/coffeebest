@@ -50,7 +50,7 @@ public class ConsultaSequencias implements Logica {
 
         dao.CSequencias pesquisa = new dao.CSequencias();
         List<modelo.MSequencias> listSequencia = pesquisa.getByFilters(filtro, dataset, cobertura, identidade, ordenacao);
-
+        
         modelo.MPagina paginacao = new MPagina(listSequencia, Integer.parseInt(request.getParameter("limitby")));
         
         request.setAttribute("paginacao", paginacao);

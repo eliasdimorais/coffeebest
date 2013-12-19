@@ -26,13 +26,12 @@
             <div id="header" class="clearfix">    
                 <c:import url="cabecalho_simples.jsp"/>
             </div>                    
-            <jsp:useBean id="detalhes" class="dao.CDetalhes" scope="page" /> 
-            <c:set value="${detalhes.consultaSequencias(param.pk_sequencia)}" var="query" scope="request" />
-            <c:set value="${detalhes.consultaGo((param.pk_sequencia))}" var="listaGo" scope="request" />
-            <c:set value="${detalhes.consultaReads((param.pk_sequencia))}" var="listaReads" scope="request" />
-            <c:set value="${detalhes.consultaBlast_n((param.pk_sequencia))}" var="listBlastn" scope="request" />
-            <c:set value="${detalhes.consultaBlast_x((param.pk_sequencia))}" var="listaBlastx" scope="request"  />
-
+            <!--<jsp:useBean id="detalhes" class="dao.CDetalhes" scope="page" /> -->
+            <c:set value="${detalhes.consultaSequenciasId((param.id))}" var="query" scope="request" />
+            <c:set value="${detalhes.consultaGo((param.id))}" var="listaGo" scope="request" />
+            <%--<c:set value="${detalhes.consultaReads((param.id))}" var="listaReads" scope="request" />--%>
+            <c:set value="${detalhes.consultaBlastN((param.id))}" var="listBlastN" scope="request" />
+            <c:set value="${detalhes.consultaBlastX((param.id))}" var="listBlastX" scope="request" />
 
 
             <!-- -------------------------------- Detalhes Gerais ----------------------------------------- -->
@@ -42,8 +41,8 @@
                         <tr>
                             <td style="padding-right: 10px"><b>Sequence Name: </b></td>
                             <td> <c:choose>
-                                    <c:when test="${not empty query.pk_sequencia}" >
-                                        <c:out value="${query.header}" />
+                                    <c:when test="${not empty query.id}" >
+                                        <c:out value="${query.query}" />
                                     </c:when>
                                     <c:otherwise>
                                         Not sequence to display
@@ -52,14 +51,14 @@
 
                             </td>
                         </tr>
-                        <tr>
+                        <%--<tr>
                             <td style="padding-right: 10px"><b>Sequence Length: </b></td>
                             <td><c:out value="${query.length}" /></td>
                         </tr>
                         <tr>
                             <td style="padding-right: 10px"><b>Dataset: </b></td>
                             <td><c:out value="${query.dataset}" /></td>
-                        </tr>
+                        </tr>--%>
                     </table>
                     <!-- ---------- Sequences and NCBI search --------------- -->
                     <tr>
@@ -67,8 +66,8 @@
                             <h3>Sequence<hr class="divisao" /></h3>
                             <form id="form1" name="form1" target="_blank" action="http://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastx&BLAST_PROGRAMS=blastx&PAGE_TYPE=BlastSearch&SHOW_DEFAULTS=on&LINK_LOC=blasthome" method="post">
                                 <textarea name="QUERY" rows="5" cols="180" style="max-width: 900px "><%
-                                    %>>ID: ${query.pk_sequencia} | NAME: ${query.header}<%out.println();
-                                    %>${query.sequencia}
+                                    %>>ID: ${query.id} | NAME: ${query.query}<%out.println();
+                                    %>${query.sequences}
                        
                                 </textarea>
                                 <br>
@@ -83,41 +82,38 @@
             </div>
             <!-- -------------------------------- FIM Detalhes Gerais ----------------------------------------- -->
 
-
-
             <!-- -------------------------------- Primeiro resultado blast ----------------------------------------- -->
             <div id="content" class="clearfix shadow" style="height: auto">       
                 <h3>Comparative analysis result</h3>
                 <br>                
                 <c:choose>
-                    <c:when test="${not empty listBlastn}">
+                    <c:when test="${not empty listBlastN}">
                         <c:catch var="error">
                             <table class="sequencia blasts">
                                 <thead>
                                     <tr>
-                                        <th><b>Subject name</b></th>
-                                        <th><b>Subject dataset</b></th>
-                                        <th><b>Subject<br/>length</b></th>
-                                        <th><b>Subject<br/>Coverage</b></th>
-                                        <th><b>Query<br/>Coverage</b></th>
-                                        <th><b>Identities</b></th>
+                                        <th><b>Subject Name</b></th>
+                                        <th><b>Dataset</b></th>
+                                        <th><b>Subject<br/>Length</b></th>
+                                        <th><b>Identity</b></th>
                                         <th><b>Score</b></th>
-                                        <th><b>Strand</b></th>                                        
+                                        <th><b>Strand<br/>Query</b></th>
+                                        <th><b>Strand<br/>Subject</b></th>
                                     </tr>
                                 </thead>
                                 <tbody>                                         
-                                    <c:forEach var="b" items="${listBlastn}">
+                                    <c:forEach var="b" items="${listBlastN}">
                                         <tr>
                                             <td>
-                                                <a href="./details.jsp?pk_sequencia=${b.subject.pk_sequencia}">${b.subject.header}</a>
+                                                <a href="./details.jsp?id=${b.seq}">${b.sbj_name}</a>
                                             </td>
-                                            <td><c:out value="${b.subject.dataset}" /></td>
-                                            <td style="text-align: center"><c:out value="${b.subject.length}" /></td>
-                                            <td style="text-align: center"><c:out value="${b.s_cobertura} %" /></td>
-                                            <td style="text-align: center"><c:out value="${b.q_cobertura} %" /></td>
-                                            <td style="text-align: center"><c:out value="${b.alignmentLength} / ${b.identities} (${b.identities_pctm} %)" /></td>
+                                            <td style="text-align: center"><c:out value="${b.sbj_dataset}" /></td>
+                                            <td style="text-align: center"><c:out value="${b.sbj_length}" /></td>
+                                            <td style="text-align: center"><c:out value="${b.identity}" /></td>
                                             <td style="text-align: center"><c:out value="${b.score}" /></td>
-                                            <td style="text-align: center"><c:out value="${b.q_strand} / ${b.s_strand}" /></td>
+                                            <td style="text-align: center"><c:out value="${b.strand_qry}" /></td>
+                                            <td style="text-align: center"><c:out value="${b.strand_sbj}" /></td>
+                                        
                                         </tr>
                                     </c:forEach>
                                 </tbody>
@@ -134,7 +130,7 @@
                     </c:otherwise>
                 </c:choose>
                 <!-- -------------------------------- FIM Primeiro resultado blast ----------------------------------------- -->
-                <td style="width: 100%"><h3>Reads</h3></td>    
+                <%--<td style="width: 100%"><h3>Reads</h3></td>    
                 <tr>
                     <td>
                         <!-- --------- READS ----------------- -->
@@ -173,47 +169,41 @@
                         </c:choose> 
                         <!-- --------- FIM READS ----------------- -->
                     </td>
-
+                --%>
                 <br/>
                 <br/>
                 <!-- -------------------------------- Segundo resultado blast ----------------------------------------- -->
+                <div id="content1" class="clearfix shadow" style="height: auto">       
                 <h3>Plantcyc annotation</h3>
-                <br/>
+                <br>                
                 <c:choose>
-                    <c:when test="${not empty listaBlastx}">
+                    <c:when test="${not empty listBlastX}">
                         <c:catch var="error">
                             <table class="sequencia blasts">
                                 <thead>
                                     <tr>
-                                        <th><b>Subject<br/>Acession</b></th>
-                                        <th><b>Acession<br/>Length</b></th>
-                                        <th><b>Plantcy<br/>Enzyme</b></th>
-                                        <th><b>Function</b></th>
-                                        <th><b>First Hit<br/>Specie</b></th>                                        
-                                        <th><b>Gene</b></th>
-                                        <th><b>Subject<br/>Coverage</b></th>
-                                        <th><b>Query<br/>Coverage</b></th>
-                                        <th><b>Identities</b></th>
+                                        <th><b>Subject Name</b></th>
+                                        <th><b>Dataset</b></th>
+                                        <th><b>Subject<br/>Length</b></th>
+                                        <th><b>Identity</b></th>
                                         <th><b>Score</b></th>
-                                        <th><b>Frame</b></th>
-                                        <th><b>Positives</b></th> 
+                                        <th><b>Strand<br/>Query</b></th>
+                                        <th><b>Strand<br/>Subject</b></th>
                                     </tr>
                                 </thead>
                                 <tbody>                                         
-                                    <c:forEach var="b" items="${listaBlastx}">
+                                    <c:forEach var="b" items="${listBlastX}">
                                         <tr>
-                                            <td><c:out value="${b.subject.header}" /></td>
-                                            <td style="text-align: center"><c:out value="${b.subject.length}" /></td>
-                                            <td><c:out value="${b.subject.plantcyc}" /></td>
-                                            <td><c:out value="${b.subject.funcao}" /></td>
-                                            <td><c:out value="${b.subject.plantcyc_dataset}" /></td>
-                                            <td><c:out value="${b.subject.gene}" /></td>
-                                            <td style="text-align: center"><c:out value="${b.s_cobertura} %" /></td>
-                                            <td style="text-align: center"><c:out value="${b.q_cobertura} %" /></td>
-                                            <td style="text-align: center"><c:out value="${b.alignmentLength} / ${b.identities} (${b.identities_pctm} %)" /></td>
+                                            <td>
+                                                <a href="./details.jsp?id=${b.seq}">${b.sbj_name}</a>
+                                            </td>
+                                            <td style="text-align: center"><c:out value="${b.sbj_dataset}" /></td>
+                                            <td style="text-align: center"><c:out value="${b.sbj_length}" /></td>
+                                            <td style="text-align: center"><c:out value="${b.identity}" /></td>
                                             <td style="text-align: center"><c:out value="${b.score}" /></td>
-                                            <td style="text-align: center"><c:out value="${b.frames}" /></td>
-                                            <td style="text-align: center"><c:out value="${b.positives}" /></td>
+                                            <td style="text-align: center"><c:out value="${b.strand_qry}" /></td>
+                                            <td style="text-align: center"><c:out value="${b.strand_sbj}" /></td>
+                                        
                                         </tr>
                                     </c:forEach>
                                 </tbody>
@@ -222,14 +212,13 @@
                         <c:if test="${not empty error}">
                             <c:out value="${error}" />
                             <br/>
-                            <h3>An error has occurred while accessing the database. See if the link is valid sequence informed.</h3>
-                            <h4>Ocorreu algum erro ao acessar o banco de dados. Veja se o link da sequencia informada é valido.</h4>
+                            Ocorreu algum erro ao acessar o banco de dados. Veja se o link da sequencia informada é valido
                         </c:if>
                     </c:when>
                     <c:otherwise>
                         Not found hits 
                     </c:otherwise>
-                </c:choose>        
+                </c:choose>
                 <!-- -------------------------------- FIM Segundo resultado blast ----------------------------------------- -->
                 <br/>
                 <br/>

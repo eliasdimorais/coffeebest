@@ -35,7 +35,7 @@ public class ExportaSequencias implements Logica {
         int formato = Integer.parseInt(request.getParameter("formato"));
         String scopo = request.getParameter("scopo");
         MPagina paginacao = (modelo.MPagina) request.getServletContext().getAttribute("paginacao");
-        String diretorio = request.getServletContext().getContext("/saest3").getRealPath("/");
+        String diretorio = request.getServletContext().getContext("/coffeebEST").getRealPath("/");
 
         HttpSession sessao = request.getSession();
         String caminhorelativo = "/arquivos/" + sessao.getId() + "/download/";

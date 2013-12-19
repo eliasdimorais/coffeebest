@@ -55,9 +55,9 @@
                             <td>
                                 <select name="namespace" size="1" >
                                     <option value="all" selected="true">all</option>
-                                    <option value="molecular function">molecular function</option>
-                                    <option value="biological process">biological process</option>
-                                    <option value="celullar component">celullar component</option>                                
+                                    <option value="molecular_function">molecular function</option>
+                                    <option value="biological_process">biological process</option>
+                                    <option value="cellular_component">cellular component</option>                                
                                 </select>
                                 <br/>
                             </td>

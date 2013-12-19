@@ -17,8 +17,8 @@ public class ConnectionFactory {
     public Connection getConnection()  {
         try {
             String usuario = "postgres";
-            String senha = "postgres";
-            String urlconexao = "jdbc:postgresql://localhost:5432/coffebest";
+            String senha = "h-$aquBD";
+            String urlconexao = "jdbc:postgresql://localhost:8080/coffeebest";
 
             Class.forName("org.postgresql.Driver");
             DriverManager.getConnection(urlconexao, usuario, senha);

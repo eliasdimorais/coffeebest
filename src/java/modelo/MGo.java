@@ -9,16 +9,17 @@ package modelo;
  * @author bruno
  */
 public class MGo {
-    private int pk_gontology;
+    private int id;
     private String name;
     private String namespace;
+    private String acc;
 
-    public int getPk_gontology() {
-        return pk_gontology;
+    public int getId() {
+        return id;
     }
 
-    public void setPk_gontology(int pk_gontology) {
-        this.pk_gontology = pk_gontology;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -37,5 +38,11 @@ public class MGo {
         this.namespace = namespace;
     }
 
-    
+    public String getAcc() {
+        return acc;
+    }
+
+    public void setAcc(String acc) {
+        this.acc = acc;
+    } 
 }

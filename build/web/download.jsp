@@ -55,15 +55,15 @@
             <div id="content" class="clearfix shadow">
                                             <h3>Download</h3>
                                             <h4><i>Coffea arabica</i></h4>
-                                            <a href="./web/dataset/CAcontigs.fasta" download="CAcontigs.fasta">Reads CA</a> <br/>
-                                            <a href="./web/dataset/CAcontigs.fasta" download="CAcontigs.fasta">Contigs CA</a>
+                                            <a href="dataset/SingletsCA.fasta" download="singletsCA.fasta">Singlets CA</a> <br/>
+                                            <a href="dataset/ContigCA.fasta" download="contigsCA.fasta">Contigs CA</a>
                                             <br/>
                                             <h4><i>Coffea canephora</i></h4>
-                                            <a href="./web/dataset/CCreads.fasta" download="CCreads.fasta">Reads CC</a> <br/>
-                                            <a href="./web/dataset/CCcontigs.fasta" download="CCcontigs.fasta">Contigs CC</a>
+                                            <a href="dataset/SingletsCC.fasta" download="singletsCC.fasta">Singlets CC</a> <br/>
+                                            <a href="dataset/ContigCC.fasta" download="contigsCC.fasta">Contigs CC</a>
                                             <br/>
 
-                                            <h4>Fruit by Week - VAI ALTERAR AQUI</h4>                                          
+                                            <h4>Fruit by Week</h4>                                          
                                             <div class="img">
                                                 <a target="_blank" href="./dataset/18weeks.fasta" download="18weeks.fasta">
                                                     <img src="images/coffea_18.jpg" alt="18 weeks coffea " width="110" height="90">

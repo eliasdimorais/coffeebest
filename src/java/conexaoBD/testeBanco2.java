@@ -16,6 +16,6 @@ public class testeBanco2 {
     public static void main(String[] args) throws SQLException {
         testeBanco vv = new testeBanco();
        vv.consulta();
-        vv.Fexa();
+        vv.Fechar();
     }
 }

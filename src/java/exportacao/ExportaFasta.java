@@ -31,11 +31,11 @@ public class ExportaFasta implements Exportacao {
             for (MSequencias seq : sequencias) {
                 fos.write(">".getBytes());
                 fos.write(" ID: ".getBytes());
-                fos.write(seq.getPk_sequencia().getBytes());
+                fos.write(seq.getId().getBytes());
                 fos.write(" | NAME: ".getBytes());
-                fos.write(seq.getHeader().getBytes());
+                fos.write(seq.getQuery().getBytes());
                 fos.write("\n".getBytes());
-                fos.write(seq.getSequencia().getBytes());
+                fos.write(seq.getSequences().getBytes());
                 fos.write("\n\n".getBytes());
             }
             fos.close();
